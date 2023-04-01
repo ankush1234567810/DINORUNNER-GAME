@@ -1,0 +1,44 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    
+}
+
+#board {
+    background-color: lightgray ;
+    border-bottom : 1px solid black;
+    background-image: url(underwater.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 5s;
+
+    animation-name: animate;
+    animation-direction:alternate-reverse ;
+    animation-duration:  30s; ;
+    animation-fill-mode:forwards ;
+    animation-iteration-count: infinite ;
+    animation-play-state: running ;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes animate{
+    0%{
+        background-image: url(prehistoric-landscape-cartoon-scenery-background_107791-9349.png);
+    }
+    25%{
+    background-image: url(underwater.png);
+    }
+    50%{
+        background-image: url(landscapes.png);
+    }
+    75%{
+        background-image: url(fantasy-cheese-planet-with-trees_107791-12467.png);
+    }
+    100%{
+        background-image: url(download.png);
+    }
+}
+
+
